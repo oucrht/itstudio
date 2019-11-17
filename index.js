@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './css/index.scss';
 import Header from "./header";
 import {Content1,Content2,Content3,Content4} from "./content";
+<<<<<<< HEAD
+=======
+import img from './static/content2_icon1.png';
+>>>>>>> 更新
 
 
 class App extends React.Component{
@@ -17,14 +21,22 @@ class App extends React.Component{
                 '爱特工作室现在拥有五个部门，分别为：UI设计，前端开发，程序开发，APP开发和游戏开发。多样的部门满足丰富的兴趣。在这里，不论年龄，不论性别，只要你有一颗学技术的心，爱特工作室总能给予你惊喜！',
                 '每一届爱特人都身怀绝技，在每一刻都能迸发出奇思妙想。用双手解决一切难题，是极客的通行证。加入我们，和这些有趣又万能的灵魂在一起，把思考与责任铭记于心，把对技艺的热爱传承下去。',
             ],
+<<<<<<< HEAD
             cardContent1:[
+=======
+            cardContent:[
+>>>>>>> 更新
                 <img className={'inlineBlock'} src={require('./static/content2_icon1.png')} alt={'1'} key={'img1'}/>,
                 <img className={'inlineBlock'} src={require('./static/content2_icon2.png')} alt={'1'} key={'img2'}/>,
                 <img className={'inlineBlock'} src={require('./static/content2_icon3.png')} alt={'1'} key={'img3'}/>,
                 <img className={'inlineBlock'} src={require('./static/content2_icon4.png')} alt={'1'} key={'img4'}/>,
                 <img className={'inlineBlock'} src={require('./static/content2_icon5.png')} alt={'1'} key={'img5'}/>,
             ],
+<<<<<<< HEAD
             cardTitle1:['UI设计','前端开发','程序开发','安卓开发','游戏开发'],
+=======
+            cardTitle:['UI设计','前端开发','程序开发','安卓开发','游戏开发'],
+>>>>>>> 更新
         };
     }
     render() {
