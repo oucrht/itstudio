@@ -124,25 +124,35 @@ class Content3 extends React.Component{
                 </div>
                 <p>{this.props.content}</p>
                 <div className={'cardContainer5'}>
-                <div id={'crd1'} className={'card borderRadius10px'}>
-                    <div className={'icon fontSize36px fontColorWhite'}>{this.state.cardContent[0]}</div>
+                <div className={'crd1 card borderRadius10px'}>
+                    <div className={'textContainer5'}>
+                    <p className={'icon fontColorWhite'}>{this.state.cardContent[0]}</p>
                     <h3 className={'fontSize15px fontColorWhite'}>{this.state.title[0]}</h3>
                 </div>
-                <div id={'crd2'} className={'card borderRadius10px'}>
-                    <div className={'icon fontSize36px fontColorWhite'}>{this.state.cardContent[1]}</div>
+                </div>
+                <div className={'crd2 card borderRadius10px'}>
+                    <div className={'textContainer5'}>
+                    <p className={'icon fontColorWhite'}>{this.state.cardContent[1]}</p>
                     <h3 className={'fontSize15px fontColorWhite'}>{this.state.title[1]}</h3>
                 </div>
-                <div id={'crd3'} className={'card borderRadius10px'}>
-                    <div className={'icon fontSize36px fontColorWhite'}>{this.state.cardContent[2]}</div>
+                </div>
+                <div className={'crd3 card borderRadius10px'}>
+                    <div className={'textContainer5'}>
+                    <p className={'icon fontColorWhite'}>{this.state.cardContent[2]}</p>
                     <h3 className={'fontSize15px fontColorWhite'}>{this.state.title[2]}</h3>
+                    </div>
                 </div>
-                <div id={'crd4'} className={'card borderRadius10px'}>
-                    <div className={'icon fontSize36px fontColorWhite'}>{this.state.cardContent[3]}</div>
+                <div className={'crd4 card borderRadius10px'}>
+                    <div className={'textContainer5'}>
+                    <p className={'icon fontColorWhite'}>{this.state.cardContent[3]}</p>
                     <h3 className={'fontSize15px fontColorWhite'}>{this.state.title[3]}</h3>
+                    </div>
                 </div>
-                <div id={'crd5'} className={'card borderRadius10px'}>
-                    <div className={'icon fontSize36px fontColorWhite'}>{this.state.cardContent[4]}</div>
+                <div id={'crd5'} className={'crd5 card borderRadius10px'}>
+                    <div className={'textContainer5'}>
+                    <p className={'icon fontColorWhite'}>{this.state.cardContent[4]}</p>
                     <h3 className={'fontSize15px fontColorWhite'}>{this.state.title[4]}</h3>
+                    </div>
                 </div>
                 </div>
             </div>
