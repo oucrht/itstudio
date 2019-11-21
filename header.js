@@ -1,44 +1,22 @@
-<<<<<<< HEAD
 import React from 'react'
-
+import logoBlue from './static/logo_blue.png'
 class Header extends React.Component{
     render() {
         return(
             <nav id={'nav'}>
-                <img src={require('./static/logo_blue.png')} alt={'logo'}/>
-                <ul>
-                    <li><a href={'1'}>部门</a></li>
-                    <li><a href={'2'}>成员</a></li>
-                    <li><a href={'3'}>历史</a></li>
-                    <li><a href={'4'}>作品</a></li>
-                    <li><a href={'5'}>留言</a></li>
-                    <li id={"join"}><a href={'6'}>加入</a></li>
+                <img className={'float left logoBlue'} src={logoBlue} alt={'logo'}/>
+                <ul className={'fontSize9px fontColor6b6b6b navUl float right'}>
+                    <li className={'float '}>部门</li>
+                    <li className={'float '}>成员</li>
+                    <li className={'float '}>历史</li>
+                    <li className={'float '}>作品</li>
+                    <li className={'float '}>留言</li>
+                    <li className={'float borderRadius10px'} id={"join"}>加入</li>
                 </ul>
+                <div className={'clear'}/>
             </nav>
         );
     }
 }
 
-=======
-import React from 'react'
-
-class Header extends React.Component{
-    render() {
-        return(
-            <nav id={'nav'}>
-                <img src={require('./static/logo_blue.png')} alt={'logo'}/>
-                <ul>
-                    <li><a href={'1'}>部门</a></li>
-                    <li><a href={'2'}>成员</a></li>
-                    <li><a href={'3'}>历史</a></li>
-                    <li><a href={'4'}>作品</a></li>
-                    <li><a href={'5'}>留言</a></li>
-                    <li id={"join"}><a href={'6'}>加入</a></li>
-                </ul>
-            </nav>
-        );
-    }
-}
-
->>>>>>> 更新
 export default Header
