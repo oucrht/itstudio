@@ -13,8 +13,17 @@ a {
 h2,h3 {
   margin: 0;
 }
+input,button,textarea{
+  outline:none;
+}
+textarea{
+  resize:none;
+}
 * {
   box-sizing: border-box;
+}
+.clear {
+  clear: both;
 }
 .fontSize8px {
   font-size: 16px;
@@ -117,9 +126,12 @@ h2.fontColorWhite,h2.fontColorOrange,h3{
   height: 76px;
   margin-right: 32px;
 }
-.content{
+#content {
   position: relative;
-  top: -250px;
+  margin-top: -250px;
+  z-index: 1000;
+}
+.content{
   padding-top: 50px;
   margin-bottom: 50px;
   background: #FFFFFF;
@@ -161,6 +173,7 @@ h2.fontColorWhite,h2.fontColorOrange,h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     .icon {
       width: 130px;
       height: auto;
@@ -244,16 +257,163 @@ h2.fontColorWhite,h2.fontColorOrange,h3{
 }
 .yearBoard {
   color: #FFFFFF;
+
   ul {
     display: flex;
+
     li {
       width: 25%;
       text-align: center;
       margin-right: 25px;
       cursor: pointer;
     }
+
     #li5 {
       margin-right: 0;
     }
+  }
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.works {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  .clear {
+    clear: both;
+  }
+  .padding45px30px {
+    padding: 45px 30px;
+  }
+  .height250px {
+    height: 250px;
+    width: auto;
+  }
+  .height300px {
+    height: 300px;
+    width: auto;
+  }
+  .workOfLeft {
+    position: absolute;
+    z-index: 10;
+    background: rgb(183, 230, 255);
+    padding: 30px;
+    top: 40px;
+  }
+  .workOfMiddle {
+    position: absolute;
+    background:#19AEFF ;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .workOfRight {
+    position: absolute;
+    z-index: 10;
+    padding: 30px;
+    background: rgb(183, 230, 255);
+    right: 0;
+    top: 40px;
+  }
+}
+
+.commentContainer {
+  margin: 50px 0;
+  display: flex;
+}
+.commentContent {
+  position: relative;
+  background: #B7E6FF;
+  height: 100px;
+  width: 600px;
+  margin-bottom: 15px;
+  padding: 15px 10px 10px 15px;
+  .textAlignRight {
+    text-align: right;
+    font-size: 16px;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+  }
+  p {
+    text-indent: 0;
+    width: 100%;
+    margin: 0;
+  }
+}
+.rollBar {
+  width: 10px;
+  height: 330px;
+  background: #B7E6FF;
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-right: 50px;
+  .rollBlock {
+    width: 10px;
+    height: 40px;
+    background: #79D0FF;
+    border-radius: 20px;
+  }
+}
+.commentInput {
+  background: #B7E6FF;
+  padding: 20px;
+  height: 330px;
+  .buttonArea {
+    margin-top: 20px;
+  }
+  .textarea {
+    height: 230px;
+    width: 560px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .code  {
+    float: left;
+  }
+  button {
+    border: 0;
+    height: 35px;
+    width: 160px;
+    border-radius: 10px;
+    background: #58C4FF;
+    color: #FFFFFF;
+    float: right;
+    cursor: pointer;
+  }
+  input {
+    height: 35px;
+    width: 140px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+  }
+}
+
+
+.footer {
+  background: #F5F5F5;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  .flex {
+    width: 1300px;
+    margin: 0 auto;
+  }
+  .footerImg  {
+  }
+  ul {
+    margin: 0;
+    font-size: 8px;
+    line-height: 20px;
+  }
+  .information {
+    float: right;
+    text-align: right;
+
   }
 }

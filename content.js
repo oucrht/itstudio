@@ -203,6 +203,9 @@ class Content5 extends React.Component{
                         <span className={'fontColor8b8b8b'}>{this.state.contentEnglishTitle}</span></h3>
                     <h2 className={'fontSize18px fontColorOrange'}>{this.state.contentSubtitle}</h2>
                 </div>
+                <p className={'textAlignCenter'}>Coding是我们与世界对话的方式，技术是我们与未来沟通的语言。
+                    用键盘奏起一曲华丽乐章，调度程序去搭建理想的大厦与桥梁。
+                </p>
                 <Works/>
             </div>
         );
